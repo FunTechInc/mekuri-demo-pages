@@ -9,7 +9,7 @@
       "lint": "next lint"
    },
    "dependencies": {
-      "@funtech-inc/mekuri": "^3.1.20",
+      "@funtech-inc/mekuri": "^3.1.22",
       "@gsap/react": "^2.1.0",
       "gsap": "^3.12.5",
       "next": "14.1.0",
