@@ -1,6 +1,6 @@
 import { Header } from "@/components/Header";
 import "@/styles/globals.css";
-import { Mekuri, MekuriContext, useMekuriAnimation } from "@funtech-inc/mekuri";
+import { Mekuri, MekuriContext, useMekuri } from "@funtech-inc/mekuri";
 import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import { useRef } from "react";
@@ -10,7 +10,7 @@ import gsap from "gsap";
 const MekuriAnimation = ({ children }: { children: React.ReactNode }) => {
    const ref = useRef<HTMLDivElement>(null);
    const { contextSafe } = useGSAP({ scope: ref });
-   useMekuriAnimation({
+   useMekuri({
       onEveryEnter: contextSafe(() => {
          gsap.to(ref.current, {
             opacity: 1,
